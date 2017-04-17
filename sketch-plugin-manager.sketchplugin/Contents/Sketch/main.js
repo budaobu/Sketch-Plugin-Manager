@@ -2,9 +2,6 @@ function runApp(context, appName, args) {
     let sketch = context.api()
     let appUrl = sketch.resourceNamed(kHelperAppName)
 
-    log("Script path:")
-    log(context.plugin.url().path())
-
     let pluginsFolder = getPluginsFolder()
 
     // Point to plugin directory this plugin is installed in
