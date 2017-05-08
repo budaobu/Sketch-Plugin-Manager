@@ -235,7 +235,7 @@ SWIFT_CLASS("_TtC28SketchPluginManagerFramework13PluginManager")
 @interface PluginManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (PluginManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)startWithPluginDirectory:(NSString * _Nullable)pluginDirectory pluginFile:(NSString * _Nullable)pluginFile checkForUpdates:(BOOL)checkForUpdates alwaysShowUpdateAlert:(BOOL)alwaysShowUpdateAlert tab:(uint8_t)tab;
+- (void)startWithPluginDirectory:(NSString * _Nullable)pluginDirectory pluginFile:(NSString * _Nullable)pluginFile checkForUpdates:(BOOL)checkForUpdates alwaysShowUpdateAlert:(BOOL)alwaysShowUpdateAlert autoReinstall:(BOOL)autoReinstall tab:(uint8_t)tab;
 - (void)stopManager;
 @end
 
